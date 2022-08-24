@@ -12,6 +12,8 @@ $padding-left: 5rem 0 0 5rem;
 .container {
   display: flex;
   &__item {
+    width: 80vw;
+    height: 100vh;
     color: $primary-color;
     padding: $padding-left;
     background-color: $color-container;
@@ -19,12 +21,12 @@ $padding-left: 5rem 0 0 5rem;
   &__images {
     display: flex;
     justify-content: flex-end;
-    width: 60%;
-    height: 650px;
+    width: 100vw;
+    height: 100vh;
     background: {
-      size: 100% 100%;
+      size: cover;
       repeat: no-repeat;
-      image: url('../assets/zoe-graham-HeQswh6F3Uw-unsplash.jpg');
+      image: url('../assets/events1.jpg');
     }
   }
 }
@@ -35,5 +37,20 @@ $padding-left: 5rem 0 0 5rem;
   background-color: $color-container;
   & img {
     padding: 5px 13px 5px 10px;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  // position: relative;
+  height: 400px;
+  width: 700px;
+  &__text {
+    width: 80%;
+    height: auto;
+    background-color: rgba(56, 59, 59, 0.973);
+  }
+  &__picture {
+    margin-left: 2rem;
   }
 }

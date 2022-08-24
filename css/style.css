@@ -10,6 +10,8 @@
   display: flex;
 }
 .container__item {
+  width: 80vw;
+  height: 100vh;
   color: white;
   padding: 5rem 0 0 5rem;
   background-color: #5e2a96;
@@ -17,11 +19,11 @@
 .container__images {
   display: flex;
   justify-content: flex-end;
-  width: 60%;
-  height: 650px;
-  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../assets/zoe-graham-HeQswh6F3Uw-unsplash.jpg");
+  background-image: url("../assets/events1.jpg");
 }
 
 .nav {
@@ -32,4 +34,19 @@
 }
 .nav img {
   padding: 5px 13px 5px 10px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 700px;
+}
+.about__text {
+  width: 80%;
+  height: auto;
+  background-color: rgba(56, 59, 59, 0.973);
+}
+.about__picture {
+  margin-left: 2rem;
 }/*# sourceMappingURL=style.css.map */
