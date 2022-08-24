@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: white;
+$color-container: #5e2a96;
+$padding-left: 5rem 0 0 5rem;
+.container {
+  display: flex;
+  &__item {
+    color: $primary-color;
+    padding: $padding-left;
+    background-color: $color-container;
+  }
+  &__images {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    height: 650px;
+    background: {
+      size: 100% 100%;
+      repeat: no-repeat;
+      image: url('../assets/zoe-graham-HeQswh6F3Uw-unsplash.jpg');
+    }
+  }
+}
+.nav {
+  display: flex;
+  width: 9rem;
+  height: 2rem;
+  background-color: $color-container;
+  & img {
+    padding: 5px 13px 5px 10px;
+  }
+}
