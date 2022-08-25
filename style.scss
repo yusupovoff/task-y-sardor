@@ -8,7 +8,7 @@
 
 $primary-color: white;
 $color-container: #5e2a96;
-$padding-left: 5rem 0 0 5rem;
+$padding-left: 9rem 0 0 5rem;
 .container {
   display: flex;
   &__item {
@@ -17,6 +17,24 @@ $padding-left: 5rem 0 0 5rem;
     color: $primary-color;
     padding: $padding-left;
     background-color: $color-container;
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  &__item p:nth-child(3) {
+    margin-top: 3rem;
+  }
+  &__item p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  &__item button {
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 15px;
+    width: 16rem;
+    color: $color-container;
   }
   &__images {
     display: flex;
@@ -40,17 +58,85 @@ $padding-left: 5rem 0 0 5rem;
   }
 }
 .about {
+  width: 50vw;
+  height: 625px;
+  background-color: rgba(56, 59, 59, 0.973);
   display: flex;
-  align-items: center;
-  // position: relative;
-  height: 400px;
-  width: 700px;
+  padding-left: 5rem;
+  color: $primary-color;
   &__text {
-    width: 80%;
-    height: auto;
-    background-color: rgba(56, 59, 59, 0.973);
+    position: relative;
+    width: 70%;
+    top: 8rem;
+  }
+  &__text p:first-child {
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.2rem;
+    line-height: 120%;
+    font-size: 0.5rem;
+  }
+  &__text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
   }
   &__picture {
-    margin-left: 2rem;
+    position: relative;
+    left: 5rem;
+    top: 6rem;
   }
+  &__picture > img {
+    position: absolute;
+  }
+}
+.features_item img {
+  background-color: #5e2a96;
+}
+.features {
+  width: 40vw;
+  height: 441px;
+  padding: $padding-left;
+  &__title {
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      letter-spacing: 0.2rem;
+      color: $color-container;
+    }
+  }
+  &__services {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__blog1 {
+    margin-right: 3rem;
+  }
+  &_item {
+    h5 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.bottom_1,
+.bottom_2 {
+  margin-bottom: 4rem;
+}
+.features__images {
+  width: 600px;
+  height: 741px;
+  background-color: $color-container;
+  position: absolute;
+  img {
+    width: 80%;
+    position: relative;
+    right: 150px;
+    top: 6.5rem;
+  }
+}
+.left__right .right {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -440px;
 }
